@@ -1,6 +1,26 @@
-# KineticEnergyProject
+# 1. KineticEnergyProject
 Proyecto programación 
-# rama maty test 
+
+# 2. Descripcion
+Este proyecto se basa en calcular la energia  
+
+# 3. Evento para el objetivo
+ -
+ -
+ -
+ -
+# 4. Programacion
+  # Descrpicion de herramientas
+    - Python 3.11.2
+    - Visual Studio Code 
+    - Tkinter
+    - Git
+   # Guia de instlacion
+    - Para instalar la version de python utlizado, se requiere ir al la pagina directa de Python: https://www.python.org/downloads/windows/
+       esto descaragara un instalador el cual se debe instalar con su configuracion predeterminada
+    - Visual Studio code se instala mediate su pagina web: https://code.visualstudio.com/download. Esto descargara un instalador el 
+       cual se debe instalar con su configuracion de defecto
+    - 
 #---subi un archivo main 
 
 import tkinter as tk 
