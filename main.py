@@ -7,8 +7,9 @@ Ventana.geometry('800x640')
 Ingreso1 = tk.Entry(Ventana, text ='0')
 Ingreso1.pack()
 
-Ingreso2 = tk.Entry(Ventana, text= '0')
+Ingreso2 = tk.Entry(Ventana, text= '1')
 Ingreso2.pack() 
+
 
 def Formula():
     try:
