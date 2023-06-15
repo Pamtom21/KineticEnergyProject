@@ -3,7 +3,7 @@ Proyecto programación
 
 # 2. Descripcion
 En este proyecto es comnprobar el uso de la energia cinetica y como esta esta afecta a la vida cotidiana,
-por ende decidimos crear un preogrma que calcule esta incognita de manera simple y ordenada para todo el publico
+por ende decidimos crear un programa que calcule esta incognita de manera simple y ordenada para todo el publico
 
 # 3. Evento para el objetivo
  # origen 
@@ -37,7 +37,7 @@ por ende decidimos crear un preogrma que calcule esta incognita de manera simple
     - Tkinter, libreria relacionada con el ingreso de datos
     - Git, un repositorio de datos 
     - Git Hub, la pagina web que sirve ver los repocitorios  
-   # Guia de instlacion
+   # Guia de instalacion
     - Python 3.11.2: https://www.python.org/downloads/windows/
        - Esto descaragara un instalador el instalador se debe instalar
        - Configuracion predeterminada
