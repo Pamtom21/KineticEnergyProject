@@ -53,7 +53,9 @@ por ende decidimos crear un programa que calcule esta incognita de manera simple
        - Configuracion de defecto
     - Git Hub
        - Se busca git hub en buscador de preferencia
-       - se ingresa en el link y se 
+       - se ingresa en el link
+       - se crea una cuenta 
+       - se crea el reopositorio en cual se subiran las actuliazaiones de lo abarcado
 
 
 
