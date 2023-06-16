@@ -58,6 +58,6 @@ por ende decidimos crear un programa que calcule esta incognita de manera simple
        - se crea el reopositorio en cual se subiran las actuliazaiones de lo abarcado
 
 
-
+https://youtu.be/oOGBkPTqKEU
 
 
