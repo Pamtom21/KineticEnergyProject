@@ -40,3 +40,4 @@ tk.Entry(
 #botonPr.pack()
 #if botonPr == True:
 #    resultado.replace(x=92,y=170)
+Ventana.mainloop()
