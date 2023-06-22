@@ -7,17 +7,17 @@ Ventana.title('Energia Cinetica')
 Ventana.configure(background= 'dark slate blue')
 
 
-n1 = tk.Entry(Ventana, text ='1')#
+n1 = tk.Entry(Ventana, text ='1')#masa
 n1.place(x=92,y=40)
 
 
-n2 = tk.Entry(Ventana, text= '2')#.place(x=92,y=40)
+n2 = tk.Entry(Ventana, text= '2')#velocidad
 n2.place(x=92,y=90) 
 
 
 def resolver(*_):
-    a= n1.get()
-    b= n2.get()
+    a= n1.get()#masa
+    b= n2.get()#velocidad
 
     if not (a:= n1.get()) or not (b:= n2.get()):
         return
@@ -30,8 +30,8 @@ def resolver(*_):
     
 res = tk. StringVar()
 botonPr = tk.Button(Ventana, text = 'CALCULAR', command = resolver ).place(x=110,y=250)
-tk.Label(Ventana, text="\nIngrese Masa").place(x=92,y=5)
-tk.Label(Ventana, text="\nIngrese Velocidad").place(x=92,y=55)
+tk.Label(Ventana, text="\nIngrese Masa(kg)").place(x=92,y=5)
+tk.Label(Ventana, text="\nIngrese Velocidad(m/s)").place(x=92,y=55)
 tk.Label(Ventana, text="\nLa energia cinetica es: ").place(x=92,y=130)
 tk.Entry(
     Ventana, justify="center", textvariable=res, state="disabled"
