@@ -62,14 +62,29 @@ def opciones():
         n3.place_forget()
         ulala.place_forget()
         botonGRAF.place_forget()
-        
+def graficar():
+        a= n1.get()#masa
+        b= n2.get()#velocidad
+        try:
+          a, b = float(a), float(b)
+        except ValueError:
+            pass
+            Cajaemergente= messagebox.showerror('Error', 'Coloque numeros')
+            Cajaemergente.pack()
+        t=n3.get()
+        F = 0.5*a*(b**2)
+        F2 = (str(F))
+        x = t
+        y = np.cos(F2)
+        plt.plot(x,y)
+        plt.show()        
 
 
 texto = Label(Ventana, text='')
 texto1 = Label(Ventana, text='1/2 x m x v^2', font='Arial 20')
 texto2 = Label(Ventana, text='')
 seleccion = IntVar()
-botonGRAF = Button(Ventana, text = 'Graficar', command = resolver, bd=5 )
+botonGRAF = Button(Ventana, text = 'Graficar', command = graficar, bd=5 )
 Label(Ventana, text="Opciones", font='Arial 15').place(x=135,y=35)
 botonPr = Radiobutton(Ventana, text = 'Orígen', value=1, variable=seleccion, command = opciones).place(x=70,y=70)
 botonPr = Radiobutton(Ventana, text = 'Fórmula', value=2, variable=seleccion, command =  opciones).place(x=130,y=70)
