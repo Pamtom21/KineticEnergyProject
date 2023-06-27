@@ -20,6 +20,8 @@ n2.place(x=667,y=200)
 ulala=Label(Ventana, text="Tiempo s")
 n3 = Entry(Ventana, text= '3', bd=4)#tiempo
 
+
+
 def resolver(*_):
     a= n1.get()#masa
     b= n2.get()#velocidad
@@ -36,6 +38,7 @@ def resolver(*_):
         Cajaemergente.pack()
     else: 
         E = res.set(str(0.5*a*(b**2))) 
+
 
 def opciones():
     if seleccion.get() == 1:
@@ -65,19 +68,21 @@ def opciones():
 def graficar():
         a= n1.get()#masa
         b= n2.get()#velocidad
+        t= n3.get()
+        t1 = int(t)
         try:
           a, b = float(a), float(b)
         except ValueError:
             pass
             Cajaemergente= messagebox.showerror('Error', 'Coloque numeros')
             Cajaemergente.pack()
-        t=int(n3.get())
-        t1= int(t)
-        F = 0.5*a*(b**2)
-        x = np.arange(0,t1,60)
-        y = np.cos(F)
-        plt.plot(x,y)
-        plt.show()        
+        F = int(0.5*a*(b**2))
+        x = np.arange(0,F,1)
+        x2 = np.cos(x)
+        y = np.linspace(0, t1, len(x))
+        plt.plot(y,x2)
+        plt.show() 
+       
 
 
 texto = Label(Ventana, text='')
