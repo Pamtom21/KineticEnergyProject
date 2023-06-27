@@ -71,11 +71,10 @@ def graficar():
             pass
             Cajaemergente= messagebox.showerror('Error', 'Coloque numeros')
             Cajaemergente.pack()
-        t=n3.get()
+        t=int(n3.get())
+        t1= int(t)
         F = 0.5*a*(b**2)
-        F2 = (str(F))
-        F3= F2
-        x = t
+        x = np.arange(0,t1,60)
         y = np.cos(F)
         plt.plot(x,y)
         plt.show()        
