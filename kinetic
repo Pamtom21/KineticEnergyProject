@@ -74,8 +74,9 @@ def graficar():
         t=n3.get()
         F = 0.5*a*(b**2)
         F2 = (str(F))
+        F3= F2
         x = t
-        y = np.cos(F2)
+        y = np.cos(F)
         plt.plot(x,y)
         plt.show()        
 
