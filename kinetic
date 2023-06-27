@@ -17,6 +17,8 @@ n1.place(x=432,y=200)
 Label(Ventana, text="Ingrese Velocidad(m/s)").place(x=667,y=170)
 n2 = Entry(Ventana, text= '2', bd=4)#velocidad
 n2.place(x=667,y=200) 
+ulala=Label(Ventana, text="Tiempo s")
+n3 = Entry(Ventana, text= '3', bd=4)#tiempo
 
 def resolver(*_):
     a= n1.get()#masa
@@ -50,23 +52,33 @@ def opciones():
         texto2.place(x=100, y=150)
     else:
         texto2.place_forget()
+    
+    if seleccion.get() == 4:
+        ulala.place(x=100,y=200)
+        n3.place(x=100,y=230)
+        botonGRAF.place(x=100,y=330) 
+    else:
+        texto2.place_forget()
+        n3.place_forget()
+        ulala.place_forget()
+        botonGRAF.place_forget()
+        
 
 
 texto = Label(Ventana, text='')
 texto1 = Label(Ventana, text='1/2 x m x v^2', font='Arial 20')
 texto2 = Label(Ventana, text='')
 seleccion = IntVar()
-
+botonGRAF = Button(Ventana, text = 'Graficar', command = resolver, bd=5 )
 Label(Ventana, text="Opciones", font='Arial 15').place(x=135,y=35)
 botonPr = Radiobutton(Ventana, text = 'Orígen', value=1, variable=seleccion, command = opciones).place(x=70,y=70)
 botonPr = Radiobutton(Ventana, text = 'Fórmula', value=2, variable=seleccion, command =  opciones).place(x=130,y=70)
 botonPr = Radiobutton(Ventana, text = 'Aplicaciones', value=3, variable=seleccion, command = opciones ).place(x=200,y=70)
-
+botonPr = Radiobutton(Ventana, text = 'Grafico', value=4, variable=seleccion, command = opciones).place(x=260,y=70)
 res = StringVar()
 Label(Ventana, text="Calculadora E.C", font= 'Arial 16').place(x=535,y=110)
 Label(Ventana, text="La energia cinetica es: ").place(x=553,y=260)
 Entry(Ventana, justify="center", textvariable=res, state="disabled", bd=7).place(x=546,y= 290)
 botonPrC = Button(Ventana, text = 'CALCULAR', command = resolver, bd=5 ).place(x=577,y=330)
-
 
 Ventana.mainloop()
