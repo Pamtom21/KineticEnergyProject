@@ -202,7 +202,7 @@ def CalVelo():
        
 
 # Texto de la opcion 1
-texto = Label(Ventana, text='Si se aplica una fuerza y se transfiere energia \n y no hay resistencias \n la energia se transforma en cientica ', font="Arial 11")
+texto = Label(Ventana, text='Si se aplica una fuerza y se transfiere energia \n y no hay resistencias \n la energia se transforma en cinetica ', font="Arial 11")
 # Texto de la opcion 2
 texto1 = Label(Ventana, text= ' Energia cinetica \n1/2 x m x v^2', font='Arial 20')
 # Texto de la opcion 3
