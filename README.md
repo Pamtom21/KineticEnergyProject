@@ -13,8 +13,8 @@
      cinética del péndulo.
      
      Pero para empezar, ¿como se genera el fenomeno de la energia cinetica?. Pues para responder la incognita se remonta hacia la epoco de Isaac Newton,
-     esto fue la conclusion de ver otro tipo de energias ya que Newton impuso la ley del energia es decir la energia no se gasta o elimina sino que 
-     se transforma y la energia cinetica es una de estas expresiones de la energia.
+     esto fue la conclusion de ver otro tipo de energias ya que Newton ya que, el dijo que,cuando aplicas una fuerza a un objeto, estás transfiriendo energía a ese objeto y, 
+     si no hay resistencia o fricción significativas, esa energía se convierte en energía cinética a medida que el objeto adquiere velocidad.
 
    # Fórmulas a usar
        -La primera fórmula a usar es:
