@@ -41,6 +41,8 @@
     - Python 3.11.2: es un lenguaje de programación.
     - Visual Studio Code: es el entorno de desarrollo integrado para el lenguaje de programación.
     - Tkinter: es una librería relacionada con el ingreso de datos.
+    - Matplotlib: es una librería relacionada con el ingreso de datos.
+    - Numpy es una librería relacionada con el ingreso de datos.
     - Git: es un sistema de control de versiones.
     - GitHub: es una plataforma web que permite ver los repositorios.
 
@@ -56,6 +58,23 @@
 
     - Tkinter:
       - Esta librería viene instalada por defecto con Python, no requiere descarga adicional.
+    - Matplotlib
+      - Es una libreria que se debe instalar forma independeiente
+      - Primero hayq ue buscar el CMD o simbolo de sistema en cual se puede buscar en la barra de busqueda de windows
+      - Una vez hecho se deb usar el comando cd (consiste en entrar y salir de las carpetas, para salir de las carpetas se utlizara los '..')
+      - Una vez llegado a la zona en la que python se instalo se debe entrar a la carpeta (cd Python'version')
+      - Una vez dentro se abrira la carpeta scripts (cd Scripts) 
+      - Se utiliza el siguiente comando 'pip install matplotlib'
+      - y ya esta
+      
+    - Numpy
+      - Es una libreria que se debe instalar forma independeiente
+      - Primero hayq ue buscar el CMD o simbolo de sistema en cual se puede buscar en la barra de busqueda de windows
+      - Una vez hecho se deb usar el comando cd (consiste en entrar y salir de las carpetas, para salir de las carpetas se utlizara los '..')
+      - Una vez llegado a la zona en la que python se instalo se debe entrar a la carpeta (cd Python'version')
+      - Una vez dentro se abrira la carpeta scripts (cd Scripts) 
+      - Se utiliza el siguiente comando 'pip install numpy'
+      - y ya esta
 
     - Git:
       - Descargar el instalador.
