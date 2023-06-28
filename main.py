@@ -49,7 +49,7 @@ n3 = Entry(Ventana, text= '3', bd=4) # Tiempo 1
 n4 = Entry(Ventana, text='4', bd=4)  # Tiempo 2
 
 # Entrada de datos para la distancia
-n5 = Entry(Ventana, text='5', bd=5) #
+n5 = Entry(Ventana, text='5', bd=4) #
 
 # Funcion principal de la calculadora
 def resolver(*_):
@@ -87,7 +87,7 @@ def opciones():
     
     # si la opcion 1 es activada
     if seleccion.get() == 1:
-        texto.place(x=100, y=150)
+        texto.place(x=62, y=170)
     
     # si la opcion 1 es Desactivada
     else:
@@ -103,7 +103,7 @@ def opciones():
     
     # si la opcion 3 es activada
     if seleccion.get() == 3:
-        texto2.place(x=100, y=150)
+        texto2.place(x=80, y=170)
     
     # si la opcion 3 es Desactivada
     else:
@@ -111,9 +111,9 @@ def opciones():
     
     # si la opcion 4 es activada
     if seleccion.get() == 4:
-        ulala.place(x=100,y=200)
-        n3.place(x=100,y=230)
-        botonGRAF.place(x=100,y=330)
+        ulala.place(x=150,y=200)
+        n3.place(x=143,y=230)
+        botonGRAF.place(x=180,y=265)
     
     # si la opcion 4 es Desactivada 
     else:
@@ -128,9 +128,9 @@ def opciones():
         n4.place(x = 70,y = 230)
         li.place(x = 250, y = 200)
         n5.place(x = 230,y = 230)
-        botonCV.place(x =190,y = 330)
+        botonCV.place(x =184.5,y = 315)
         ta.place(x = 312 , y = 270)
-        resVelo1.place(x = 152, y = 270)
+        resVelo1.place(x = 145, y = 270)
     
     # si la opcion 5 es Desactivada
     else:
@@ -184,9 +184,9 @@ def graficar():
 # Calculadora de velocidad
 def CalVelo():
     # Escala de metros (desplazamiento)
-    d = n4.get()
+    t = n4.get()
     # Tiempo 2
-    t = n5.get()
+    d = n5.get()
     # Si se ingresan datos
     try:
         d,t = float(d), float(t)
@@ -202,11 +202,11 @@ def CalVelo():
        
 
 # Texto de la opcion 1
-texto = Label(Ventana, text='Si se aplica una fuerza y se transfiere energia \n y no hay resistencias \n la energia se transforma en cientica ')
+texto = Label(Ventana, text='Si se aplica una fuerza y se transfiere energia \n y no hay resistencias \n la energia se transforma en cientica ', font="Arial 11")
 # Texto de la opcion 2
-texto1 = Label(Ventana, text= 'Energia cinetica \n 1/2 x m x v^2', font='Arial 20')
+texto1 = Label(Ventana, text= ' Energia cinetica \n1/2 x m x v^2', font='Arial 20')
 # Texto de la opcion 3
-texto2 = Label(Ventana, text='En un pendulo, en los vehiculos, \n maquinas (de corte, prensas, etc), \n accidentes automovilisticos ')
+texto2 = Label(Ventana, text='En un pendulo, en los vehiculos, \n maquinas (de corte, prensas, etc), \n accidentes automovilisticos ', font= "Arial 13")
 # Genera botones tipo 'casillas'
 seleccion = IntVar()
 # Genera el boton de calcular el grafico
@@ -226,11 +226,11 @@ resVelo = StringVar()
 resVelo1 = Entry(Ventana, justify="center", textvariable=resVelo, state="disabled", bd=8)
 # Etiquetas
 Label(Ventana, text="Calculadora E.C", font= 'Arial 16').place(x=535,y=110)
-Label(Ventana, text="La energia cinetica es: ").place(x=553,y=260)
+Label(Ventana, text="La energia cinetica es (Joule) ").place(x=534,y=260)
 # Barra de entrada del calculo de la energia cinetica
 Entry(Ventana, justify="center", textvariable=res, state="disabled", bd=7).place(x=546,y= 290)
 # Boton principal del calculo de la energia cinetica
-botonPrC = Button(Ventana, text = 'Calcular', command = resolver, bd=5 ).place(x=577,y=330)
+botonPrC = Button(Ventana, text = 'Calcular', command = resolver, bd=5 ).place(x=585,y=330)
 # Boton para calcular la velocidad
 botonCV = Button(Ventana, text = 'Calcular', command = CalVelo, bd=6 )
 
