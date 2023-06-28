@@ -7,7 +7,7 @@ from tkinter import messagebox
 
 Ventana = Tk()
 Ventana.geometry('900x500')
-Ventana.title('Energia Cinetica')
+Ventana.title('Energia Cinetica by Team Vienesa')
 Ventana.configure(background= 'dark slate blue')
 
 Label(Ventana, text="Ingrese Masa(kg)").place(x=450,y=170)
@@ -17,10 +17,13 @@ n1.place(x=432,y=200)
 Label(Ventana, text="Ingrese Velocidad(m/s)").place(x=667,y=170)
 n2 = Entry(Ventana, text= '2', bd=4)#velocidad
 n2.place(x=667,y=200) 
-ulala=Label(Ventana, text="Tiempo s")
+ulala=Label(Ventana, text="Tiempo en Segundos")
+Car=Label(Ventana, text="Tiempo en Segundos")
+li=Label(Ventana, text="Escala en metros")
+ta=Label(Ventana, text="M/S")
 n3 = Entry(Ventana, text= '3', bd=4)#tiempo
-
-
+n4 = Entry(Ventana, text='4', bd=4)
+n5 = Entry(Ventana, text='5', bd=5)
 
 def resolver(*_):
     a= n1.get()#masa
@@ -65,6 +68,23 @@ def opciones():
         n3.place_forget()
         ulala.place_forget()
         botonGRAF.place_forget()
+    
+    if seleccion.get() == 5:
+        Car.place(x = 75, y = 200)
+        n4.place(x = 70,y = 230)
+        li.place(x = 250, y = 200)
+        n5.place(x = 230,y = 230)
+        botonCV.place(x =190,y = 330)
+        ta.place(x = 312 , y = 270)
+        resVelo1.place(x = 152, y = 270)
+    else:
+        n4.place_forget()
+        Car.place_forget()
+        n5.place_forget()
+        li.place_forget()
+        botonCV.place_forget()
+        ta.place_forget()
+        resVelo1.place_forget()
 
 def graficar():
         a= n1.get()#masa
@@ -78,11 +98,22 @@ def graficar():
             Cajaemergente= messagebox.showerror('Error', 'Coloque numeros')
             Cajaemergente.pack()
         F = int(0.5*a*(b**2))
-        x = np.arange(-5,F,3)
+        x = np.arange(-5,F,0.05)
         x2 = np.cos(x)
         y = np.linspace(0, t1, len(x))
         plt.plot(y,x2)
         plt.show() 
+
+def CalVelo():
+    d = n4.get()
+    t = n5.get()
+    try:
+        d,t = float(d), float(t)
+    except ValueError:
+        pass
+        Cajaemergente= messagebox.showerror('Error', 'Coloque numeros')
+        Cajaemergente.pack()
+    g = resVelo.set(str(d/t))
        
 
 
@@ -96,10 +127,14 @@ botonPr = Radiobutton(Ventana, text = 'Orígen', value=1, variable=seleccion, co
 botonPr = Radiobutton(Ventana, text = 'Fórmula', value=2, variable=seleccion, command =  opciones).place(x=130,y=70)
 botonPr = Radiobutton(Ventana, text = 'Aplicaciones', value=3, variable=seleccion, command = opciones ).place(x=200,y=70)
 botonPr = Radiobutton(Ventana, text = 'Grafico', value=4, variable=seleccion, command = opciones).place(x=295,y=70)
+botonPr = Radiobutton(Ventana, text = 'Velocidad', value=5, variable=seleccion, command = opciones).place(x=170,y= 94)
 res = StringVar()
+resVelo = StringVar()
+resVelo1 = Entry(Ventana, justify="center", textvariable=resVelo, state="disabled", bd=8)
 Label(Ventana, text="Calculadora E.C", font= 'Arial 16').place(x=535,y=110)
 Label(Ventana, text="La energia cinetica es: ").place(x=553,y=260)
 Entry(Ventana, justify="center", textvariable=res, state="disabled", bd=7).place(x=546,y= 290)
-botonPrC = Button(Ventana, text = 'CALCULAR', command = resolver, bd=5 ).place(x=577,y=330)
+botonPrC = Button(Ventana, text = 'Calcular', command = resolver, bd=5 ).place(x=577,y=330)
+botonCV = Button(Ventana, text = 'Calcular', command = CalVelo, bd=6 )
 
 Ventana.mainloop()
