@@ -11,6 +11,11 @@
      calcularla? Además, nos interesa mostrar la relación entre la energía cinética y el tiempo. Por lo tanto, el objetivo de este proyecto es desarrollar una 
      calculadora que no solo calcule la energía cinética, sino que también grafique cómo varía en función del tiempo, identificando el punto máximo de energía 
      cinética del péndulo.
+     
+     Pero para empezar, ¿como se genera el fenomeno de la energia cinetica?. Pues para responder la incognita se remonta hacia la epoco de Isaac Newton,
+     esto fue la conclusion de ver otro tipo de energias ya que Newton impuso la ley del energia es decir la energia no se gasta o elimina sino que 
+     se transforma y la energia cinetica es una de estas expresiones de la energia.
+
    # Fórmulas a usar
        -La primera fórmula a usar es:
            Energía Cinética = 0.5 * masa[Kg] * Velocidad[m/s]^2
@@ -43,8 +48,7 @@
     - Tkinter: es una librería relacionada con el ingreso de datos.
     - Matplotlib: es una librería relacionada con el ingreso de datos.
     - Numpy es una librería relacionada con el ingreso de datos.
-    - Git: es un sistema de control de versiones.
-    - GitHub: es una plataforma web que permite ver los repositorios.
+
 
    # Guia de instalacion
     - Python 3.11.2: https://www.python.org/downloads/windows/
@@ -58,6 +62,7 @@
 
     - Tkinter:
       - Esta librería viene instalada por defecto con Python, no requiere descarga adicional.
+      
     - Matplotlib
       - Es una libreria que se debe instalar forma independeiente
       - Primero hayq ue buscar el CMD o simbolo de sistema en cual se puede buscar en la barra de busqueda de windows
@@ -76,16 +81,7 @@
       - Se utiliza el siguiente comando 'pip install numpy'
       - y ya esta
 
-    - Git:
-      - Descargar el instalador.
-      - Instalar Git.
-      - Configuración predeterminada.
 
-    - GitHub:
-      - Buscar GitHub en el buscador de preferencia.
-      - Ingresar en el enlace.
-      - Crear una cuenta.
-      - Crear el repositorio en el cual se subirán las actualizaciones del proyecto.
 
 
 
