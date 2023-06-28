@@ -19,6 +19,8 @@
    # Fórmulas a usar
        -La primera fórmula a usar es:
            Energía Cinética = 0.5 * masa[Kg] * Velocidad[m/s]^2
+       -La segunda fórmula a usar es:
+            Velociada[M/S] = desplazamiento[M] / tiempo[S]
    # Resolución
        -En la fórmula, ingresar los datos de la masa y la velocidad.
        -La masa se dividirá por 2.
