@@ -85,7 +85,7 @@
 # Guia de uso
 https://docs.google.com/document/d/1HPAFNl4IfJRshzn4MNrfm4Vx3W7zm0-a_4-VvWqs7-c/edit?usp=sharing
 
-# Video de uso
+# Video de uso y explicacion
 
-https://youtu.be/f13BGH5kkBE
+https://youtu.be/k8-uGnzXP38
 
