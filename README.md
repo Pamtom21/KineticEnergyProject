@@ -86,6 +86,4 @@
 https://docs.google.com/document/d/1HPAFNl4IfJRshzn4MNrfm4Vx3W7zm0-a_4-VvWqs7-c/edit?usp=sharing
 
 # Video de uso y explicacion
-
-https://youtu.be/k8-uGnzXP38
-
+https://youtu.be/L-PeH5sgGi4
